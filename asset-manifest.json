@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/nlp-test.io/static/css/main.4d0fee87.css",
+    "main.js": "/nlp-test.io/static/js/main.6d8f246b.js",
+    "static/media/ali_khorramfar.jpg": "/nlp-test.io/static/media/ali_khorramfar.b6d75f6800f0bd066aaa.jpg",
+    "static/media/mohammad_gorji.jpg": "/nlp-test.io/static/media/mohammad_gorji.1ef6852e4f4010ade289.jpg",
+    "static/media/ali_ramezani.jpg": "/nlp-test.io/static/media/ali_ramezani.7e4e3f60f02b36617b40.jpg",
+    "static/media/milad_mohammadi.jpeg": "/nlp-test.io/static/media/milad_mohammadi.49bf63b6427c03011afe.jpeg",
+    "static/media/amirhossein_bonakdar.jpg": "/nlp-test.io/static/media/amirhossein_bonakdar.1fcc3cf04aeadbae53cc.jpg",
+    "static/media/baledi.jpg": "/nlp-test.io/static/media/baledi.5e4875ea028eaf589ed6.jpg",
+    "static/media/bicharanlu.png": "/nlp-test.io/static/media/bicharanlu.90d280607bd3340cf466.png",
+    "static/media/parmis_bathayan.jpg": "/nlp-test.io/static/media/parmis_bathayan.c111efc3b0104399ba8a.jpg",
+    "static/media/ali_fartout.jpg": "/nlp-test.io/static/media/ali_fartout.87f3749e36c8005245c2.jpg",
+    "static/media/ashouri.jpg": "/nlp-test.io/static/media/ashouri.cfed1f106813a2f6e234.jpg",
+    "static/media/masoudi.jpg": "/nlp-test.io/static/media/masoudi.d169427de93eb22f61fc.jpg",
+    "static/media/amirhossein_safdarian.jpg": "/nlp-test.io/static/media/amirhossein_safdarian.f01c9309a241e7ccd33f.jpg",
+    "static/media/parham_sazdar.jpg": "/nlp-test.io/static/media/parham_sazdar.a794e812efb452cc6364.jpg",
+    "static/media/namazi-fard.jpeg": "/nlp-test.io/static/media/namazi-fard.cc63d2c906702840856a.jpeg",
+    "static/media/pouya_gohari.jpg": "/nlp-test.io/static/media/pouya_gohari.b549f724c4e0aec6de4a.jpg",
+    "static/media/karimi.jpeg": "/nlp-test.io/static/media/karimi.5d1a57294fd0dfd70469.jpeg",
+    "static/media/mohammad_amin_ghanizadeh.jpg": "/nlp-test.io/static/media/mohammad_amin_ghanizadeh.2972a6f85150ce5aff7a.jpg",
+    "static/media/faili.jpg": "/nlp-test.io/static/media/faili.3f9ee9ebd769c2a124db.jpg",
+    "static/media/momeni-nezhad.jpg": "/nlp-test.io/static/media/momeni-nezhad.ffd77ff8e2d16564323b.jpg",
+    "static/media/rahimzadeh.jpg": "/nlp-test.io/static/media/rahimzadeh.7e358b09f05a02f33c89.jpg",
+    "static/media/bagherinia.jpg": "/nlp-test.io/static/media/bagherinia.6d4b3a6eab13b635b88c.jpg",
+    "static/media/peymani.png": "/nlp-test.io/static/media/peymani.5701fa56d7da7df26df0.png",
+    "static/media/mail-open-outline.svg": "/nlp-test.io/static/media/mail-open-outline.757c9ed94bf1ae82afa29bf246f06738.svg",
+    "static/media/logo-github.svg": "/nlp-test.io/static/media/logo-github.31f5f59cad7a83d4da00527272baccc5.svg",
+    "index.html": "/nlp-test.io/index.html",
+    "static/media/logo-linkedin.svg": "/nlp-test.io/static/media/logo-linkedin.c67545d999d9b6b395ba33500ea7a452.svg",
+    "static/media/link.svg": "/nlp-test.io/static/media/link.bf0359c15a5b3198d45bd8f95f190bad.svg",
+    "static/media/menu-outline.svg": "/nlp-test.io/static/media/menu-outline.985b09aa9867a99e692497968713b570.svg",
+    "main.4d0fee87.css.map": "/nlp-test.io/static/css/main.4d0fee87.css.map",
+    "main.6d8f246b.js.map": "/nlp-test.io/static/js/main.6d8f246b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d0fee87.css",
+    "static/js/main.6d8f246b.js"
+  ]
+}

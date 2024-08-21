@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nlp-test/static/css/main.1f38a61e.css",
-    "main.js": "/nlp-test/static/js/main.ca57fa9f.js",
+    "main.js": "/nlp-test/static/js/main.aac8a1ea.js",
     "static/media/ali_khorramfar.jpg": "/nlp-test/static/media/ali_khorramfar.b6d75f6800f0bd066aaa.jpg",
     "static/media/mohammad_gorji.jpg": "/nlp-test/static/media/mohammad_gorji.1ef6852e4f4010ade289.jpg",
     "static/media/ali_ramezani.jpg": "/nlp-test/static/media/ali_ramezani.7e4e3f60f02b36617b40.jpg",
@@ -31,10 +31,10 @@
     "static/media/link.svg": "/nlp-test/static/media/link.bf0359c15a5b3198d45bd8f95f190bad.svg",
     "static/media/menu-outline.svg": "/nlp-test/static/media/menu-outline.985b09aa9867a99e692497968713b570.svg",
     "main.1f38a61e.css.map": "/nlp-test/static/css/main.1f38a61e.css.map",
-    "main.ca57fa9f.js.map": "/nlp-test/static/js/main.ca57fa9f.js.map"
+    "main.aac8a1ea.js.map": "/nlp-test/static/js/main.aac8a1ea.js.map"
   },
   "entrypoints": [
     "static/css/main.1f38a61e.css",
-    "static/js/main.ca57fa9f.js"
+    "static/js/main.aac8a1ea.js"
   ]
 }

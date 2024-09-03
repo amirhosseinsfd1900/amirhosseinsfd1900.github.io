@@ -5,7 +5,7 @@ import mailOutlineLogo from "../assets/mail-open-outline.svg";
 
 function Staff(props) {
 
-    return (<article className="flex flex-col items-center">
+    return (<article className="flex flex-col items-center" style={{padding:10}}>
     <img
       src={props.image}
       alt={props.name}

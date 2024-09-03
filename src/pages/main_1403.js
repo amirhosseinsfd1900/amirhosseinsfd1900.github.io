@@ -4,7 +4,7 @@ import "./main_1403.css";
 import Staff from "../Components/Staff";
 
 import faili from "../assets/faili.jpg";
-import peymani from "../assets/peymani.png";
+import peymani from "../assets/peymani.jpg";
 
 import staff_amirhossein_safdarian from "../assets/1403/amirhossein_safdarian.jpg";
 import staff_milad_mohammadi from "../assets/1403/milad_mohammadi.jpeg";
@@ -23,15 +23,16 @@ import linkSVG from "../assets/link.svg";
 import mailOutlineLogo from "../assets/mail-open-outline.svg";
 import utLogo from "../assets/ut-logo.png";
 import menuOutline from "../assets/menu-outline.svg";
+import { Link } from "react-router-dom";
 
-const CoursePage1403 = () => {
+const CoursePage1403 = (props) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const staffList = [
     {
       "name": "AmirHossein Safdarian",
       "image": staff_amirhossein_safdarian,
       "subject": "",
-      "duty": "",
+      "duty": "CA5, Workshop 3",
       "linkedin": "https://www.linkedin.com/in/amirhossein-safdarian/",
       "email": "mailto:safdarian2000@gmail.com",
       "website": "",
@@ -41,9 +42,9 @@ const CoursePage1403 = () => {
       "name": "Milad Mohammadi",
       "image": staff_milad_mohammadi,
       "subject": "",
-      "duty": "",
+      "duty": "CA6, Workshop 3",
       "linkedin": "https://www.linkedin.com/in/mohammadi-milad-mim/",
-      "email": "",
+      "email": "mailto:miladmohammadi@ut.ac.ir",
       "website": "https://miladmohammadi.xyz",
       "github": "https://github.com/mohammadi-milad-mim"
     },
@@ -51,20 +52,9 @@ const CoursePage1403 = () => {
       "name": "Ali Khorramfar",
       "image": staff_ali_khorramfar,
       "subject": "",
-      "duty": "",
+      "duty": "CA2, Quiz 2",
       "linkedin": "https://www.linkedin.com/in/ali-khoramfar/",
       "email": "mailto:Alikhorramfar@gmail.com",
-      "website": "",
-      "github": ""
-    },
-    {
-
-      "name": "Ali Ramezani",
-      "image": staff_ali_ramezani,
-      "subject": "",
-      "duty": "",
-      "linkedin": "https://www.linkedin.com/in/ali-ramezani-352a0b128/",
-      "email": "mailto:ali.ramezani.96@ut.ac.ir",
       "website": "",
       "github": ""
     },
@@ -73,9 +63,20 @@ const CoursePage1403 = () => {
       "name": "AmirHossein Bonakdar",
       "image": staff_amirhossein_bonakdar,
       "subject": "",
-      "duty": "",
+      "duty": "CA2, Quiz 2",
       "linkedin": "https://ir.linkedin.com/in/amirhossein-bonakdar-a138a7156",
       "email": "mailto:amir7bonakdar@gmail.com",
+      "website": "",
+      "github": ""
+    },
+    {
+
+      "name": "Ali Ramezani",
+      "image": staff_ali_ramezani,
+      "subject": "",
+      "duty": "CA1, Quiz 1, CA3, Quiz 3, Workshop 1",
+      "linkedin": "https://www.linkedin.com/in/ali-ramezani-352a0b128/",
+      "email": "mailto:ali.ramezani.96@ut.ac.ir",
       "website": "",
       "github": ""
     },
@@ -84,7 +85,7 @@ const CoursePage1403 = () => {
       "name": "Mohammad Amin Ghanizadeh",
       "image": staff_mohammad_amin_ghanizadeh,
       "subject": "",
-      "duty": "",
+      "duty": "CA1, Quiz 1, CA3, Quiz 3",
       "linkedin": "https://www.linkedin.com/in/mohammad-amin-ghanizadeh-9b18791a5/",
       "email": "mailto:ghanizadeh.amin@ut.ac.ir",
       "website": "",
@@ -95,9 +96,20 @@ const CoursePage1403 = () => {
       "name": "Mohammad Gorji",
       "image": staff_mohammad_gorji,
       "subject": "",
-      "duty": "",
+      "duty": "CA4, Quiz 4, Workshop 2",
       "linkedin": "https://www.linkedin.com/in/mohammad-gorji-465749275",
       "email": "mailto:mohamadgorjicode@gmail.com",
+      "website": "",
+      "github": ""
+    },
+    {
+      
+      "name": "Ali Fartout",
+      "image": staff_ali_fartout,
+      "subject": "",
+      "duty": "CA4, Quiz 4",
+      "linkedin": "https://www.linkedin.com/in/ali-fartout-552428170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "email": "mailto:ali.fartout@ut.ac.ir",
       "website": "",
       "github": ""
     },
@@ -106,7 +118,7 @@ const CoursePage1403 = () => {
       "name": "Parham Sazdar",
       "image": staff_parham_sazdar,
       "subject": "",
-      "duty": "",
+      "duty": "CA3, Quiz 3, Workshop 1",
       "linkedin": "https://www.linkedin.com/in/parham-sazdar",
       "email": "mailto:p.sazdar@gmail.com",
       "website": "",
@@ -116,33 +128,22 @@ const CoursePage1403 = () => {
       "name": "Parmis Bathayan",
       "image": staff_parmis_bathayan,
       "subject": "",
-      "duty": "",
+      "duty": "Quiz 5, Quiz 6",
       "linkedin": "https://www.linkedin.com/in/parmis-bathayan-15bb43323/",
-      "email": "",
+      "email": "mailto:parmisbathaeiyan@gmail.com",
       "website": "",
-      "github": ""
+      "github": "https://github.com/parmisbathaeiyan"
     },
     {
 
       "name": "Pouya Gohari",
       "image": staff_pouya_gohari,
       "subject": "",
-      "duty": "",
+      "duty": "Quiz 5, Quiz 6",
       "linkedin": "https://linkedin.com/in/pouya-gohari-a2124a255",
       "email": "mailto:pouya.hmgohari@gmail.com",
       "website": "",
-      "github": ""
-    },
-    {
-      
-      "name": "Ali Fartout",
-      "image": staff_ali_fartout,
-      "subject": "",
-      "duty": "",
-      "linkedin": "https://www.linkedin.com/in/ali-fartout-552428170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "email": "",
-      "website": "",
-      "github": ""
+      "github": "https://github.com/PouyaGohari"
     }
   ]
   
@@ -210,7 +211,7 @@ const CoursePage1403 = () => {
           <div className="left flex-col justify-center items-center gap-20">
             {/* Instructor */}
             
-            <article className="flex flex-col items-center">
+            <article className="flex flex-col items-center" style={{paddingRight:20}}>
               <h2 className="font-bold sm:text-xl">Instructor</h2>
               <img
                 src={faili}
@@ -254,7 +255,7 @@ const CoursePage1403 = () => {
                     className="sm:!h-7 !h-5"
                   />
                 </a>
-                <a href="#">
+                <a href="mailto:samanehrad94@gmail.com">
                   <img src={mailOutlineLogo} alt="Mail" />
                 </a>
               </div>
@@ -305,6 +306,15 @@ const CoursePage1403 = () => {
         <p>
           Throughout the course, students will actively participate in workshops. These workshops are designed to bolster their skills and proficiency in NLP through practical engagement . Following the completion of each workshop, video recordings will be published for public access.
         </p>
+        </div>
+      </section>
+      
+      <section id="past" className="px-6 py-8">
+        <div className="container">
+          <h1 className="font-bold text-xl">Past Course Archives</h1>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="/1402" >2024 Spring Course</Link>
+          </p>
         </div>
       </section>
 

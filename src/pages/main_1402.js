@@ -4,7 +4,7 @@ import "./main_1402.css";
 import Staff from "../Components/Staff";
 
 import faili from "../assets/faili.jpg";
-import peymani from "../assets/peymani.png";
+import peymani from "../assets/peymani.jpg";
 import staff_rahimzadeh from "../assets/1402/rahimzadeh.jpg";
 import staff_momeni from "../assets/1402/momeni-nezhad.jpg";
 import staff_baledi from "../assets/1402/baledi.jpg";
@@ -19,8 +19,9 @@ import linkSVG from "../assets/link.svg";
 import mailOutlineLogo from "../assets/mail-open-outline.svg";
 import utLogo from "../assets/ut-logo.png";
 import menuOutline from "../assets/menu-outline.svg";
+import { Link } from "react-router-dom";
 
-const CoursePage1402 = () => {
+const CoursePage1402 = (props) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const staffList = [
     {
@@ -98,7 +99,38 @@ const CoursePage1402 = () => {
       "homepage": "https://sepehr-karimi.github.io"
     }
   ]
-  
+  const CAList = [
+      {
+      "name": "Computer Assignment 1",
+      "subject": "Tokenization, Language Modeling With N-Grams",
+      "url": "https://drive.google.com/file/d/1SDK4znZ8CW_NT90pGAtG0d5R6XWs6G4b/view?usp=sharing"
+      },
+      {
+          "name": "Computer Assignment 2",
+          "subject": "Sentiment Analysis, Embedding, Naive Bayes",
+          "url": "https://drive.google.com/file/d/1Uhq7iJdTay9zXI2G0wTH_JHecvm-4eFK/view?usp=sharing"
+      },
+      {
+          "name": "Computer Assignment 3",
+          "subject": "Neural Language Models (LSTM, GRU)",
+          "url": "https://drive.google.com/file/d/1wDstVAWu2RUXj0W8d4k6rgL6L5a9RSN0/view?usp=sharing"
+      },
+      {
+          "name": "Computer Assignment 4",
+          "subject": "Fine-Tuning Language Models",
+          "url": "https://drive.google.com/file/d/10eKFXCoZUI3Rna7gqS7xDq_DQ6hM2deM/view?usp=sharing"
+      },
+      {
+          "name": "Computer Assignment 5",
+          "subject": "Machine Translation",
+          "url": "https://drive.google.com/file/d/1QXxc-Z9L-anzd59sXlM-nnK2SdrCw3bP/view?usp=sharing"
+      },
+      {
+          "name": "Computer Assignment 6",
+          "subject": "LLM Based Chatbot",
+          "url": "https://drive.google.com/file/d/1chhkJrU6PBrmI06MIyuLjXrIYt7094Th/view?usp=sharing"
+      }
+  ]
   return (
     <>
       <header className="py-2 px-4 shadow-lg bg-primary-600 flex text-white justify-between items-center">
@@ -259,7 +291,84 @@ const CoursePage1402 = () => {
           Throughout the course, students will actively participate in workshops. These workshops are designed to bolster their skills and proficiency in NLP through practical engagement . Following the completion of each workshop, video recordings will be published for public access.
         </p>
         </div>
-      </section>
+        </section>
+        <section id="quizzes" className="px-6 py-8">
+        <div className="container">
+        <h1 className="font-bold text-xl">Quizzes</h1>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://drive.google.com/file/d/1rk2mHcxObSl9iP3llyZDGTUKCWXiUmU7/view?usp=sharing" >Quiz 1</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://drive.google.com/file/d/1_xm8vus_xfhzXqxEOHelLq3XvfXLvr7C/view?usp=sharing" >Quiz 2</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://drive.google.com/file/d/1A1Vlmx6wSOtEirhH_b5VVx1ngvTtLD9k/view?usp=sharing" >Quiz 3-4</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://drive.google.com/file/d/1Si9CQkJALK6Hs6mYXaRO09Ob0iwIz70M/view?usp=sharing" >Quiz 5</Link>
+          </p>
+          <br/>
+        </div>
+        </section>
+        <section id="assignments" className="px-6 py-8 bg-primary-50">
+        <div className="container">
+        <h1 className="font-bold text-xl">Assignments</h1>
+          {CAList.map((ca) => (
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to={ca.url} >{ca.name} - {ca.subject}</Link>
+          </p>))}
+        </div>
+        </section>
+        <section id="workshops" className="px-6 py-8">
+        <div className="container">
+        <h1 className="font-bold text-xl">Workshops</h1>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://www.youtube.com/watch?v=-A0y4oZw0GQ" >Workshop 1 - Empowering NLP with PyTorch</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://www.youtube.com/watch?v=478oBBebGV0" >Workshop 2 - Exploring quantization techniques and QLoRA</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://www.youtube.com/watch?v=x3Y96HkithQ" >Workshop 3 - LLM Based Chatbot with LangGraph - LangGraph (Part 1)</Link>
+          </p>
+          <p class="mt-4" style={{color: "#518ccf"}}>
+            <Link to="https://www.youtube.com/watch?v=hXWjRE9whJM" >Workshop 3 - LLM Based Chatbot with LangGraph - LangGraph (Part 2)</Link>
+          </p>
+        </div>
+        </section>
+      <Link to="/">
+      <button 
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          left: '20px',
+          padding: '10px 20px',
+          backgroundColor: '#007bff', 
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          zIndex: 1000
+        }}
+        // onClick={() => props.setYearFunction("1403")}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="feather feather-arrow-left"
+        >
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </button>
+      </Link>
 
       <footer className="mt-5 text-center py-3 container">
         Coded with ❤️ in an afternoon by{" "}
